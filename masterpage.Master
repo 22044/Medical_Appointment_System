@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="Doctor_Appointment_System.masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<%--    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1335px;
+            height: 19px;
+        }
+        .auto-style2 {
+            height: 19px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+      <%--      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>
+            <table style="width:100%;">
+                <tr>
+                    <td style="border-style: double; background-color: #0099CC; font-size: x-large; font-weight: bold;" class="auto-style2" colspan="2" align="center">
+                        TEXAS HOSPITALITY PVT LTD</td>
+                </tr>
+                <tr>
+                    <td style="border-style: double; background-color: #669999; font-size: x-large;" class="auto-style1">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BorderColor="#009999" ForeColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Home |" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Doctor |" Value="Doctor " NavigateUrl="~/Doctor.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Patient |" Value="New Item" NavigateUrl="~/Patient.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Reception |" Value="New Item" NavigateUrl="~/Reception.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact us |" Value="New Item" NavigateUrl="~/Contact Us.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/About us.aspx" Text="About us |" Value="New Item"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    &nbsp;
+                    </td>
+                    <td style="border-style: double; background-color: #669999; font-size: x-large;" class="auto-style2">
+                        <asp:Label ID="Label1" runat="server" ForeColor="Black" Text="Date" Width="200px"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #669999; font-size: x-large" colspan="2">Harshil Savaj&nbsp;&nbsp;&nbsp;&nbsp; 20012531030</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
